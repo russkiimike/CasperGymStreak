@@ -14,9 +14,13 @@
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
+
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
-
+    <div>
+        <input id="search-input" type="text" placeholder="Type to search" />
+        <div id="search-result"></div>
+    </div>
 </head>
 <body class="{{body_class}}">
 
@@ -24,8 +28,7 @@
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
-        <input id="search-bar">
-        <ul id="search-results"></ul>
+
 
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
