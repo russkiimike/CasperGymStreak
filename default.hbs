@@ -24,6 +24,8 @@
 
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
+        <input id="search-bar">
+        <ul id="search-results"></ul>
 
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
@@ -134,6 +136,32 @@
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
+
+
+<script src="/assets/js/searchinghost.min.js"></script>
+<script>
+
+
+    var searchinGhost = new SearchinGhost({
+        // Example API using Ghost demo website
+        key: '023111c40d283debf237635243',
+        url: 'https://blog.gymstreak.com',
+        debug: true,
+        searchOn: 'keyup',
+        loadOn: 'page',
+        limit: 12,
+        // cacheMaxAge: 0,
+        onSearchEnd: function(posts) {
+            var counter = posts.length;
+            var foundElement = document.getElementById('search-bar-items-found');
+            if (counter <= 1) {
+                foundElement.textContent = `${counter} post found`;
+            } else {
+                foundElement.textContent = `${counter} posts found`;
+            }
+        }
+    });
+</script>
 
 </body>
 </html>
