@@ -18,7 +18,6 @@ const autoprefixer = require('autoprefixer');
 const colorFunction = require('postcss-color-mod-function');
 const cssnano = require('cssnano');
 const easyimport = require('postcss-easy-import');
-const SearchinGhost = require('searchinghost');
 
 const REPO = 'TryGhost/Casper';
 const REPO_READONLY = 'TryGhost/Casper';
