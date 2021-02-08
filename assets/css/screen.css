@@ -3116,3 +3116,135 @@ Usage (In Ghost editor):
         color: color-mod(var(--green) l(+5%) s(-5%));
     }
 }
+
+
+.checkout-form {
+    margin: 0 auto 10vw;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.checkout-title {
+    margin: 0 auto 10px;
+    padding: 5vw 0 0;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+}
+
+.checkout-form p {
+    margin: 0 auto 60px;
+    max-width: 500px;
+    color: var(--midgrey);
+    font-size: 1.3em;
+}
+
+.checkout-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.checkout-plan {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-top: var(--blue) 6px solid;
+    color: color(var(--midgrey) l(-30%));
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(39,44,49,0.03), 0 0 3px rgba(39,44,49,0.05), 0 5px 22px -10px rgba(39,44,49,0.12), 0 25px 30px -25px rgba(39,44,49,0.05);
+}
+
+.checkout-plan + .checkout-plan {
+    margin-left: 30px;
+}
+
+.checkout-plan-header {
+    position: relative;
+    padding: 0 0 50px;
+    color: var(--midgrey);
+    text-align: center;
+}
+
+.checkout-plan-header:after {
+    content: "";
+    position: absolute;
+    right: 30%;
+    bottom: 25px;
+    left: 30%;
+    display: block;
+    height: 2px;
+    background: rgba(39,44,49,0.08);
+    border-radius: 2px;
+}
+
+.checkout-plan-header h3 {
+    margin: 0 0 25px 0;
+    color: var(--darkgrey);
+    font-size: 1.8rem;
+    line-height: 1.15em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.checkout-plan-header span {
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+.checkout-plan-header strong {
+    color: var(--darkgrey);
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+.checkout-plan-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkout-plan-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.checkout-plan-content li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 15px 20px;
+    line-height: 1.4em;
+}
+
+.checkout-plan-content li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    display: block;
+    color: color(var(--green) l(-5%));
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.checkout-plan-content .button {
+    margin: 20px 0 0 0;
+}
+
+@media (max-width: 740px) {
+    .checkout-title {
+        margin-top: 50px;
+    }
+    .checkout-box {
+        flex-direction: column;
+    }
+    .checkout-plan + .checkout-plan {
+        margin: 5vw 0 0 0;
+    }
+}
