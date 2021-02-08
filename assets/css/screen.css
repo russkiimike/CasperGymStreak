@@ -3291,7 +3291,7 @@ Usage (In Ghost editor):
 
 .pricingtable-title small {
     font-weight: 400;
-    color: color-mod(var(--color-base) l(+50%));
+    color: var(--color-base);
 }
 
 .pricingtable-desc {
