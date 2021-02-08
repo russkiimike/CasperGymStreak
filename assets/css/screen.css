@@ -3224,7 +3224,7 @@ Usage (In Ghost editor):
 }
 
 .checkout-plan-content li:before {
-    content: "✓✓";
+    content: "";
     position: absolute;
     left: 0;
     display: block;
