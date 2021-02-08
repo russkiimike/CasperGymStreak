@@ -3253,7 +3253,7 @@ Usage (In Ghost editor):
 /* Membership
 /* ---------------------------------------------------------- */
 
-.pricingtable {
+/*.pricingtable {
     display: grid;
     justify-content: space-between;
     grid-gap: 30px;
@@ -3389,6 +3389,8 @@ Usage (In Ghost editor):
         display: none;
     }
 }
+
+*/
 
 .gh-section-head {
     padding: 8vmin 0;
