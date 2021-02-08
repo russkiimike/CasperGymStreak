@@ -3248,3 +3248,190 @@ Usage (In Ghost editor):
         margin: 5vw 0 0 0;
     }
 }
+
+
+/* Membership
+/* ---------------------------------------------------------- */
+
+.pricingtable {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 720px;
+    margin: 5vw auto;
+}
+
+.pricingtable-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border: var(--color-border) 1px solid;
+    color: var(--color-base);
+    border-radius: 8px;
+}
+
+.pricingtable-plan:hover {
+    border-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.pricingtable-plan-header {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: var(--color-border) 1px solid;
+}
+
+.pricingtable-title {
+    margin: 0 0 0.5em;
+    font-size: 2.1rem;
+    color: var(--color-primary);
+}
+
+.pricingtable-title small {
+    font-weight: 400;
+    color: color-mod(var(--color-base) l(+50%));
+}
+
+.pricingtable-desc {
+    margin: 0 0 1.5em 0;
+    font-family: var(--font-content);
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+
+.pricingtable-pricewrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricingtable-price {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    font-size: 2.6rem;
+}
+
+.pricingtable-price small {
+    margin: 5px 0 0 5px;
+    font-size: 1.5rem;
+    color: color-mod(var(--color-base) l(+50%));
+}
+
+.pricingtable-price.strike {
+    color: color-mod(var(--color-base) l(+70%));
+}
+
+.pricingtable-price.strike:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: auto;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    right: -5px;
+    background: color-mod(var(--color-base) l(+70%));
+}
+
+.pricingtable-timelimit {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.pricingtable-details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.pricingtable-details li {
+    margin: 0;
+}
+
+.pricingtable-details li span {
+    margin-right: 5px;
+}
+
+.pricingtable-button {
+    display: block;
+    width: 100%;
+    margin: 30px 0 0;
+}
+
+@media (max-width: 700px) {
+    .pricingtable {
+        grid-template-columns: 1fr;
+    }
+    .pricingtable-details {
+        font-size: 1.4rem;
+    }
+    .pricingtable-plan:first-child li:nth-child(1),
+    .pricingtable-plan:first-child li:nth-child(4),
+    .pricingtable-plan:first-child li:nth-child(5),
+    .pricingtable-plan:first-child li:nth-child(6),
+    .pricingtable-plan:first-child li:nth-child(7),
+    .pricingtable-plan:first-child li:nth-child(8),
+    .pricingtable-plan:first-child li:nth-child(9),
+    .pricingtable-plan:first-child li:nth-child(10) {
+        display: none;
+    }
+    .pricingtable-plan:last-child li:nth-child(1),
+    .pricingtable-plan:last-child li:nth-child(2),
+    .pricingtable-plan:last-child li:nth-child(3),
+    .pricingtable-plan:last-child li:nth-child(4),
+    .pricingtable-plan:last-child li:nth-child(5),
+    .pricingtable-plan:last-child li:nth-child(6),
+    .pricingtable-plan:last-child li:nth-child(7),
+    .pricingtable-plan:last-child li:nth-child(8) {
+        display: none;
+    }
+}
+
+.gh-section-head {
+    padding: 8vmin 0;
+    text-align: center;
+}
+
+.gh-section-head p {
+    margin: 0.3em 0 0 0;
+    font-size: 2.4rem;
+    color: rgba(0,0,0,0.6);
+}
+
+.gh-faq {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 8vmin 12vmin;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gh-faq-item {
+    text-align: left;
+}
+
+.gh-faq-item h4 {
+    margin: 0 0 1.2rem;
+    font-size: 2rem;
+    line-height: 1.15em;
+    font-weight: 800;
+}
+
+.gh-faq-item p {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    color: rgba(0,0,0,0.6);
+}
+
+.gh-faq-item a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .gh-faq {
+        grid-template-columns: 1fr;
+    }
+}
