@@ -15,6 +15,16 @@
     --pink: #fa3a57;
     --brown: #a3821a;
     --darkmode: color-mod(var(--darkgrey) l(+2%));
+
+    /* Colours */
+   --color-primary: #FF383C;
+   --color-base: #121519;
+   --color-secondary: #5B7A81;
+   --color-border: #c7d5d8;
+   --color-bg: #E4EBF0;
+   --color-wash: #f8fafc;
+   --color-success: #80b912;
+    --color-error: #ff4545;
 }
 
 /* Reset
