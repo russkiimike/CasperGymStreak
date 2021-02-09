@@ -3436,3 +3436,26 @@ Usage (In Ghost editor):
         grid-template-columns: 1fr;
     }
 }
+
+.rdv-header {
+    margin: 7vw 0;
+    text-align: center;
+}
+
+.rdv-header h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: var(--font-content);
+    font-size: 5rem;
+    line-height: 1.25em;
+}
+
+.rdv-header span {
+    display: block;
+    max-width: 720px;
+    margin: 10px auto 0;
+    font-size: 2rem;
+    line-height: 1.5em;
+    color: var(--color-base);
+    opacity: 0.6;
+}
