@@ -3795,7 +3795,7 @@ form[data-members-form].error .message-error {
 /*Membership header*/
 
 .rdv-header {
-    margin: 7vw 0;
+    margin: 5vw 0;
     text-align: center;
 }
 
@@ -3937,7 +3937,7 @@ form[data-members-form].error .message-error {
     .pricingtable-details {
         font-size: 1.4rem;
     }
-  
+
 }
 
 .gh-section {
