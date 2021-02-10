@@ -3,7 +3,7 @@
 <header class="site-header">
     {{> site-header}}
 </header>
-<main id="site-main" class="site-main site-signup outer">
+<main id="site-main" class="site-main outer">
     <div class="inner">
 
     {{#if @member.paid}}
@@ -14,6 +14,10 @@
     {{else}}
 
         {{!-- Logged in, not paying: Check out --}}
+        <header class="rdv-header">
+            <h1>Premium Membership</h1>
+            <span>GymStreak Blog offers lorem ipsum</span>
+        </header>
         <div class="pricingtable">
              <a class="pricingtable-plan" href="#" data-members-plan="Monthly">
                  <div class="pricingtable-plan-content">
