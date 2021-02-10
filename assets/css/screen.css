@@ -3855,6 +3855,9 @@ form[data-members-form].error .message-error {
     margin: 0 0 0.5em;
     font-size: 2.5rem;
     color: var(--blue);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .pricingtable-title small {
