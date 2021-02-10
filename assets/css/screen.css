@@ -3297,7 +3297,7 @@ Usage (In Ghost editor):
 }
 
 .pricingtable-plan:hover {
-    border-color: var(--color-primary);
+    border-color: var(--);
     text-decoration: none;
 }
 
@@ -3459,4 +3459,10 @@ Usage (In Ghost editor):
     .gh-faq {
         grid-template-columns: 1fr;
     }
+}
+
+.site-main .site-signup {
+  margin-top: 64px;
+  padding-bottom: 4vw;
+  background: #fff;
 }
