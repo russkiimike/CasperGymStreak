@@ -3834,15 +3834,9 @@ form[data-members-form].error .message-error {
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    border: 3px solid var(--blue);
     color: var(--darkgrey);
     border-radius: 8px;
     background: #fff
-}
-
-.pricingtable-plan:hover {
-    border-color: var(--);
-    text-decoration: none;
 }
 
 .pricingtable-plan-header {
