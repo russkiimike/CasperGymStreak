@@ -3840,7 +3840,6 @@ form[data-members-form].error .message-error {
 }
 
 .pricingtable-plan:hover {
-  
     text-decoration: none;
 }
 
@@ -3938,36 +3937,7 @@ form[data-members-form].error .message-error {
     .pricingtable-details {
         font-size: 1.4rem;
     }
-    .pricingtable-plan:first-child li:nth-child(5),
-    .pricingtable-plan:first-child li:nth-child(6),
-    .pricingtable-plan:first-child li:nth-child(7),
-    .pricingtable-plan:first-child li:nth-child(8), {
-        display: none;
-    }
-    .pricingtable-plan:nth-child(2) li:nth-child(5),
-    .pricingtable-plan:nth-child(2) li:nth-child(6),
-    .pricingtable-plan:nth-child(2) li:nth-child(7),
-    .pricingtable-plan:nth-child(2) li:nth-child(8), {
-        display: none;
-    }
-    .pricingtable-plan:nth-child(3) li:nth-child(5),
-    .pricingtable-plan:nth-child(3) li:nth-child(6),
-    .pricingtable-plan:nth-child(3) li:nth-child(7),
-    .pricingtable-plan:nth-child(3) li:nth-child(8), {
-        display: none;
-    }
-    .pricingtable-plan:nth-child(4) li:nth-child(5),
-    .pricingtable-plan:nth-child(4) li:nth-child(6),
-    .pricingtable-plan:nth-child(4) li:nth-child(7),
-    .pricingtable-plan:nth-child(4) li:nth-child(8), {
-        display: none;
-    }
-    .pricingtable-plan:last-child li:nth-child(5),
-    .pricingtable-plan:last-child li:nth-child(6),
-    .pricingtable-plan:last-child li:nth-child(7),
-    .pricingtable-plan:last-child li:nth-child(8) {
-        display: none;
-    }
+  
 }
 
 .gh-section {
@@ -3975,7 +3945,7 @@ form[data-members-form].error .message-error {
 }
 
 .gh-section-head {
-    padding: 8vmin 0;
+    padding: 0 0 8vmin;
     text-align: center;
 }
 
