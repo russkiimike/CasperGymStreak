@@ -3837,6 +3837,7 @@ form[data-members-form].error .message-error {
     border: 3px solid var(--blue);
     color: var(--darkgrey);
     border-radius: 8px;
+    background: #fff
 }
 
 .pricingtable-plan:hover {
@@ -3987,6 +3988,14 @@ form[data-members-form].error .message-error {
     color: var(--midgrey);
 }
 
+.gh-section-head h2 {
+    margin: 1.5em 0 .5em;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.15;
+    text-rendering: optimizeLegibility;
+}
+
 .gh-faq {
     display: grid;
     justify-content: space-between;
@@ -4000,7 +4009,7 @@ form[data-members-form].error .message-error {
 
 .gh-faq-item h4 {
     margin: 0 0 1.2rem;
-    font-size: 2rem;
+    font-size: 2.3rem;
     line-height: 1.15em;
     font-weight: 500;
 }
@@ -4020,4 +4029,8 @@ form[data-members-form].error .message-error {
     .gh-faq {
         grid-template-columns: 1fr;
     }
+
+    .gh-section-head h2 {
+        font-size: 3.2rem;
+
 }
