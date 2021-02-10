@@ -3870,14 +3870,14 @@ form[data-members-form].error .message-error {
 
 .pricingtable-pricewrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .pricingtable-price {
     display: inline-flex;
     align-items: center;
     position: relative;
-    font-size: 2.6rem;
+    font-size: 3.6rem;
 }
 
 .pricingtable-price small {
@@ -3888,6 +3888,7 @@ form[data-members-form].error .message-error {
 
 .pricingtable-price.strike {
     color: color-mod(var(--darkgrey) l(+70%));
+    font-size: 2.6rem;
 }
 
 .pricingtable-price.strike:after {
