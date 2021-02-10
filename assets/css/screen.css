@@ -3792,7 +3792,7 @@ form[data-members-form].error .message-error {
     }
 }
 
-/* Redverge Membership */
+/*Membership header*/
 
 .rdv-header {
     margin: 7vw 0;
@@ -3802,19 +3802,17 @@ form[data-members-form].error .message-error {
 .rdv-header h1 {
     max-width: 900px;
     margin: 0 auto;
-    font-family: var(--font-content);
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.25em;
 }
 
 .rdv-header span {
     display: block;
-    max-width: 720px;
+    max-width: 500px;
     margin: 10px auto 0;
-    font-size: 2rem;
+    font-size: 1.3em;
     line-height: 1.5em;
-    color: var(--color-base);
-    opacity: 0.6;
+    color: var(--midgrey);
 }
 
 
@@ -3836,8 +3834,8 @@ form[data-members-form].error .message-error {
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
-    border: var(--color-border) 1px solid;
-    color: var(--color-base);
+    border: 3px solid var(--blue);
+    color: var(--darkgrey);
     border-radius: 8px;
 }
 
@@ -3849,13 +3847,13 @@ form[data-members-form].error .message-error {
 .pricingtable-plan-header {
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: var(--color-border) 1px solid;
+    border-bottom: var(--darkgrey) 1px solid;
 }
 
 .pricingtable-title {
     margin: 0 0 0.5em;
-    font-size: 2.1rem;
-    color: var(--color-primary);
+    font-size: 2.5rem;
+    color: var(--blue);
 }
 
 .pricingtable-title small {
@@ -3865,8 +3863,7 @@ form[data-members-form].error .message-error {
 
 .pricingtable-desc {
     margin: 0 0 1.5em 0;
-    font-family: var(--font-content);
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     line-height: 1.5em;
 }
 
@@ -3885,11 +3882,11 @@ form[data-members-form].error .message-error {
 .pricingtable-price small {
     margin: 5px 0 0 5px;
     font-size: 1.5rem;
-    color: color-mod(var(--color-base) l(+50%));
+    color: color-mod(var(--darkgrey) l(+50%));
 }
 
 .pricingtable-price.strike {
-    color: color-mod(var(--color-base) l(+70%));
+    color: color-mod(var(--darkgrey) l(+70%));
 }
 
 .pricingtable-price.strike:after {
@@ -3901,11 +3898,11 @@ form[data-members-form].error .message-error {
     top: 55%;
     left: -5px;
     right: -5px;
-    background: color-mod(var(--color-base) l(+70%));
+    background: color-mod(var(--darkgrey) l(+70%));
 }
 
 .pricingtable-timelimit {
-    color: var(--color-primary);
+    color: var(--darkgrey);
     font-weight: 500;
 }
 
@@ -3937,20 +3934,30 @@ form[data-members-form].error .message-error {
     .pricingtable-details {
         font-size: 1.4rem;
     }
-    .pricingtable-plan:first-child li:nth-child(1),
-    .pricingtable-plan:first-child li:nth-child(4),
     .pricingtable-plan:first-child li:nth-child(5),
     .pricingtable-plan:first-child li:nth-child(6),
     .pricingtable-plan:first-child li:nth-child(7),
-    .pricingtable-plan:first-child li:nth-child(8),
-    .pricingtable-plan:first-child li:nth-child(9),
-    .pricingtable-plan:first-child li:nth-child(10) {
+    .pricingtable-plan:first-child li:nth-child(8), {
         display: none;
     }
-    .pricingtable-plan:last-child li:nth-child(1),
-    .pricingtable-plan:last-child li:nth-child(2),
-    .pricingtable-plan:last-child li:nth-child(3),
-    .pricingtable-plan:last-child li:nth-child(4),
+    .pricingtable-plan:nth-child(2) li:nth-child(5),
+    .pricingtable-plan:nth-child(2) li:nth-child(6),
+    .pricingtable-plan:nth-child(2) li:nth-child(7),
+    .pricingtable-plan:nth-child(2) li:nth-child(8), {
+        display: none;
+    }
+    .pricingtable-plan:nth-child(3) li:nth-child(5),
+    .pricingtable-plan:nth-child(3) li:nth-child(6),
+    .pricingtable-plan:nth-child(3) li:nth-child(7),
+    .pricingtable-plan:nth-child(3) li:nth-child(8), {
+        display: none;
+    }
+    .pricingtable-plan:nth-child(4) li:nth-child(5),
+    .pricingtable-plan:nth-child(4) li:nth-child(6),
+    .pricingtable-plan:nth-child(4) li:nth-child(7),
+    .pricingtable-plan:nth-child(4) li:nth-child(8), {
+        display: none;
+    }
     .pricingtable-plan:last-child li:nth-child(5),
     .pricingtable-plan:last-child li:nth-child(6),
     .pricingtable-plan:last-child li:nth-child(7),
@@ -3959,16 +3966,25 @@ form[data-members-form].error .message-error {
     }
 }
 
+.gh-section {
+    margin: 0 0 8vw;
+}
 
 .gh-section-head {
     padding: 8vmin 0;
     text-align: center;
 }
 
+.gh-section-head h1 {
+    margin: 0 0 .5em;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
 .gh-section-head p {
     margin: 0.3em 0 0 0;
     font-size: 2.4rem;
-    color: rgba(0,0,0,0.6);
+    color: var(--midgrey);
 }
 
 .gh-faq {
@@ -3986,17 +4002,17 @@ form[data-members-form].error .message-error {
     margin: 0 0 1.2rem;
     font-size: 2rem;
     line-height: 1.15em;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .gh-faq-item p {
     font-size: 1.8rem;
     line-height: 1.5em;
-    color: rgba(0,0,0,0.6);
+    color: var(--whitegrey);
 }
 
 .gh-faq-item a {
-    color: var(--color-primary);
+    color: var(--blue);
     font-weight: 600;
 }
 
