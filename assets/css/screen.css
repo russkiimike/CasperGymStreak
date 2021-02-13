@@ -3987,7 +3987,7 @@ form[data-members-form].error .message-error {
     justify-content: space-between;
     min-height: 200px;
     padding: 3vmin 6vmin;
-    margin: 0 -4vw 5vw;
+    margin: 0 7vw 5vw;
     font-family: var(--font-headings);
     font-size: 1.5rem;
     line-height: 1.55em;
@@ -4047,5 +4047,129 @@ form[data-members-form].error .message-error {
 @media (max-width: 600px) {
     .membersonly-cta {
         margin: 0 0 5vw;
+    }
+}
+
+/* Signup Box
+/* ---------------------------------------------------------- */
+
+.signupbox-wrapper {
+    padding: 6vmin 20px;
+    margin: 0 -20px 4vw;
+    background: #f8fafc;
+    box-shadow: 0 0 1px rgba(0,0,0,.04) inset, 0 0 5px rgba(0,0,0,.01) inset, 0 5px 22px -8px rgba(0,0,0,.05) inset;
+}
+
+.signupbox {
+    position: relative;
+    padding: 5vmin 6vmin 6vmin;
+    text-align: center;
+    background: #fff;
+    border-radius: 1vmin;
+    box-shadow:
+        0 0 1px rgba(0,0,0,.04),
+        0 0 5px rgba(0,0,0,.02),
+        0 5px 12px -8px rgba(0,0,0,.08),
+        0 12.8px 3.7px -41px rgba(0, 0, 0, 0.1),
+        0 15.8px 9.3px -41px rgba(0, 0, 0, 0.1),
+        0 17.4px 19px -41px rgba(0, 0, 0, 0.1),
+        0 19.4px 39.1px -41px rgba(0, 0, 0, 0.1),
+        0 35px 107px -41px rgba(0, 0, 0, 0.1);
+}
+
+.signupbox img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.signupbox-title {
+    margin: 0;
+    font-size: 8vmin;
+    letter-spacing: -0.5px;
+    color: var(--color-base);
+}
+
+.signupbox-title em {
+    font-style: normal;
+    font-weight: 500;
+    color: var(--color-base);
+}
+
+.signupbox-subtitle {
+    max-width: 700px;
+    margin: 0.1em auto 0;
+    font-family: var(--font-content);
+    font-size: 2.8rem;
+    line-height: 1.3em;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.signupbox-grid {
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 3vmin;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.signupbox-grid-item svg {
+    height: 50px;
+    width: 50px;
+    fill: var(--color-primary);
+}
+
+.signupbox-grid-item h4 {
+    margin: 20px 0 5px 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-base);
+}
+
+
+.signupbox-grid-item p {
+    margin: 0;
+    opacity: 0.7;
+    line-height: 1.5em;
+}
+
+.home-template .signupbox-cta {
+    transform: scale(1.35);
+    padding: 6vmin 0 8vmin 0;
+}
+
+.home-template .signupbox-cta .button + .button {
+    margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .signupbox-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .signupbox img {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+    }
+    .signupbox-title {
+        font-size: 9vmin;
+        line-height: 1em;
+    }
+    .signupbox-subtitle {
+        margin: 0.5em 0 0 0;
+        font-size: 4.4vmin;
+    }
+    .signupbox-grid {
+        display: none;
+    }
+    .home-template .signupbox-cta {
+        padding: 6vmin 0 3vmin 0;
+        transform: scale(1.1);
     }
 }
