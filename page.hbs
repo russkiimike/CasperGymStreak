@@ -23,6 +23,8 @@ into the {body} of the default.hbs template --}}
                 <h1 class="post-full-title">{{title}}</h1>
             </header>
 
+    {{#if access}}
+
             {{#if feature_image}}
             <figure class="post-full-image">
                 {{!-- This is a responsive image, it loads different sizes depending on device
@@ -46,6 +48,26 @@ into the {body} of the default.hbs template --}}
                     {{content}}
                 </div>
             </section>
+      {{else}}
+
+      {{!-- if the user does not have access, show them an upgrade CTA --}}
+
+
+                  <div class="membersonly-cta">
+                      <div class="membersonly-cta-content">
+                          <h3>Get the full story</h3>
+                          <p>Sign up now to read the full story and get access to the library of <strong class="color-primary">45</strong> members-only posts, with updates each week.</p>
+                          <div class="signupbox-cta">
+                              <a class="button" href="/about/">Learn more</a>
+                              <a class="button primary" href="/membership/">Sign up now</a>
+                          </div>
+                      </div>
+                      <img src="/assets/images/boat-small.png?v=073838906f" alt="Graphic" />
+                  </div>
+
+
+
+            {{/if}}
 
         </article>
 
