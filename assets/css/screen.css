@@ -4016,15 +4016,16 @@ form[data-members-form].error .message-error {
 .membersonly-cta-content h3 {
     margin-top: 0;
     font-family: var(--font-content);
+    font-size: 2.5rem
 }
 
 .membersonly-cta-content p {
     margin: 1rem 0 2rem;
 }
 
-.membersonly-cta img {
-    width: auto;
-    max-height: 240px;
+.membersonly-cta-content .signupbox-cta {
+      display: flex;
+      justify-content: center;
 }
 
 @media (max-width: 700px) {
