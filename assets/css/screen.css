@@ -4025,6 +4025,7 @@ form[data-members-form].error .message-error {
 .membersonly-cta-content p {
     margin: 1rem 0 2rem;
     text-align: center;
+    color:black;
 }
 
 .membersonly-cta-content .signupbox-cta {
