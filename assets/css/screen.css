@@ -4011,13 +4011,15 @@ form[data-members-form].error .message-error {
 
 .membersonly-cta-content {
     max-width: 420px;
+    margin: 2vw;
 }
 
 .membersonly-cta-content h3 {
     margin-top: 0;
     font-family: var(--font-content);
-    font-size: 2.5rem
+    font-size: 2.5rem;
     text-align:center;
+    color: black;
 }
 
 .membersonly-cta-content p {
@@ -4039,7 +4041,7 @@ form[data-members-form].error .message-error {
         text-align: center;
     }
     .membersonly-cta-content {
-        margin: 4vw 0 0;
+        margin: 2vw;
     }
     .membersonly-cta img {
         position: static;
