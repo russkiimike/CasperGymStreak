@@ -3984,7 +3984,7 @@ form[data-members-form].error .message-error {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 200px;
     padding: 3vmin 6vmin;
     margin: 0 7vw 5vw;
@@ -4017,10 +4017,12 @@ form[data-members-form].error .message-error {
     margin-top: 0;
     font-family: var(--font-content);
     font-size: 2.5rem
+    text-align:center;
 }
 
 .membersonly-cta-content p {
     margin: 1rem 0 2rem;
+    text-align: center;
 }
 
 .membersonly-cta-content .signupbox-cta {
