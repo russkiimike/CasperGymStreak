@@ -4123,7 +4123,7 @@ form[data-members-form].error .message-error {
 .signupbox-grid-item svg {
     height: 50px;
     width: 50px;
-    fill: var(--color-primary);
+    fill: var(--blue);
 }
 
 .signupbox-grid-item h4 {
@@ -4132,7 +4132,7 @@ form[data-members-form].error .message-error {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-base);
+    color: var(--darkgrey);
 }
 
 
